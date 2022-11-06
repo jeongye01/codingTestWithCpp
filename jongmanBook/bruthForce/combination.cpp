@@ -4,6 +4,6 @@ void pick(int n,vector<int>& picked,int toPick){
     for(int next=smallest;next<n;++next){
         picked.push_back(next);
         pick(n,picked,toPick-1);
-        picked.pop_back();
+        picked.pop_back();;
     }
 }
